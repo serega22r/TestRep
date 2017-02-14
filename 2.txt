@@ -1,4 +1,0 @@
-select ship, replace(substring(ship,charindex(' ', ship)+1,len(ship)-charindex(' ', reverse(ship))-charindex(' ', ship)),['a'-'z'],'*')
-/*stuff(ship,charindex(' ', ship)+1,len(ship)-charindex(' ', reverse(ship))-charindex(' ', ship), replicate('*',len(ship)-charindex(' ', reverse(ship))-charindex(' ', ship)))*/
-from outcomes
-where ship like('% % %')
